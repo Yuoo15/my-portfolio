@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Портфолио | Рамазан</title>
+</head>
+<body>
+    <header>
+        <span class="logo">Ramazan</span>
+        <nav class="nav-links">
+            <a href="#aboutMe" class="menu">Обо мне</a>
+            <a href="#ex" class="menu">Навыки</a>
+            <a href="#project" class="menu">Проекты</a>
+            <a href="#share" class="menu">Контакты</a>
+        </nav>
+        <div class="icons">
+            <img class='icon' src="./icons/sound_cloud.png" width="30px" height="30px" loading="lazy" data-soundCloud>
+            <img class='icon' src="./icons/instagram.png" width="30px" height="30px" loading="lazy" data-instagram>
+            <img class='icon' src="./icons/github.png" width="30px" height="30px" loading="lazy" data-gitHub>
+        </div>
+        <div class="burger" onclick="toggleMenu()"><img src="./icons/burger.png" width="24px" height="24px" style="user-select: none;"></div>
+    </header>
+
+    <main>
+        <div class="box-1 hidden">
+            <div class="box-1_hello">
+                <div class="text__hello">
+                    <h1>Привет! Меня зовут<br>Рамазан.</h1>
+                    <p class="info">Начнающий фронтенд-разработчик. Создаю удобные,<br>адаптивные и современные сайты с нуля.</p>
+                    <div class="text__hello_group_class">
+                        <button data-button-project>Посмотреть проекты</button>
+                        <button data-button-share>Связаться</button>
+                    </div>
+                </div>
+            </div>
+            <div class="decor_1">
+                <div class="block_1">
+                    <div class="block_2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-2 hidden">
+            <div class="box_2_block_1">
+                <div class="box_2_block_2"></div>
+            </div>
+                <div class="box_2_aboutMe">
+                    <div class="aboutMe_content">
+                        <a id="aboutMe"></a>
+                        <h1>Обо мне</h1>
+                        <p class="info">Меня зовут Рамазан, мне 16 лет. Я увлекаюсь IT, особенно веб-<br>разработкой.  
+                        Моя цель — стать фуллстек-разработчиком и создавать крутые<br> цифровые продукты.<br> 
+                        Я изучаю HTML, CSS, JavaScript и Python. Сейчас активно<br> прокачиваюсь во фронтенде и бэкенде.  </p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="box-1 hidden">
+            <div class="box-1_hello">
+                <div class="text__hello">
+                    <a id="ex"></a>
+                    <h1>Навыки</h1>
+                    <p class="info">-  Дизайн в Figma — рисую макеты сайтов, понимаю, как выглядит хороший интерфейс.<br>
+                    -  HTML, CSS — делаю структуру и оформление страниц.<br>
+                    - JavaScript — добавляю интерактивность: кнопки, анимации, калькуляторы и другое.<br>
+                    - Python — базовые навыки для работы с данными и логикой.<br>
+                    - Пишу Telegram-ботов, умею обрабатывать команды, сообщения, кнопки</p>
+                </div>
+            </div>
+            <div class="decor_1">
+                <div class="block_1">
+                    <div class="block_2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-3 hidden">
+            <div class="box-3_project"><h1>Проекты</h1></div>
+            <a id="project"></a>
+            <div class="project_allProject">
+                <div class="sites hidden">
+                    <span><p class="info">Сайты</p></span>
+                    <div class="all">
+                        <div class="card">
+                            <img src="./image_project/end.jpg" alt="project image">
+                            <h3>Project 1</h3>
+                            <p>Скоро загружу</p>
+                            <a class='card_link' href="">Посмотреть -></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bots hidden">
+                    <span><p class="info">Telegram боты</p></span>
+                    <div class="all">
+                        <div class="card">
+                            <img src="./image_project/end.jpg" alt="project image">
+                            <h3>Project 1</h3>
+                            <p>Скоро загружу</p>
+                            <a class='card_link' href="">Посмотреть -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="design hidden">
+                    <span><p class="info">Дизайн</p></span>
+                    <div class="all">
+                        <div class="card">
+                            <img src="./image_project/end.jpg" alt="project image">
+                            <h3>Project 1</h3>
+                            <p>Скоро загружу</p>
+                            <a class='card_link' href="">Посмотреть -></a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+<footer class="footer">
+    <a id="share"></a>
+    <div class="footer-content">
+        <div class="footer-block">
+        <p><strong>Телефон</strong><br><a href="tel:7767370888">+7 777 777 7777</a></p>
+    </div>
+    <div class="footer-block">
+        <p><strong>Почта</strong><br><a href="mailto:kantaevramazan@gmail.com">nonamex@gmail.com</a></p>
+    </div>
+    <div class="footer-block">
+        <p>
+        <strong>WhatsApp</strong><br>
+        <a href="https://wa.me/7767370888">+7 777 777 7777</a>
+        </p>
+    </div>
+    </div>
+    <div class="footer-bottom">
+    <div class="icon_footer">   
+        <img src ="./icons/sound_cloud.png" width="30px" height="30px" loading="lazy" data-soundCloud>
+        <img src="./icons/instagram.png" width="30px" height="30px" loading="lazy" data-instagram>
+        <img  src="./icons/github.png" width="30px" height="30px" loading="lazy" data-gitHub>
+    </div>
+    <p class="prava">© 2025 Рамазан. Все права защищены.</p>
+    </div>
+</footer>
+</body>
+</html>
