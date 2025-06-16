@@ -7,15 +7,30 @@ const soundCloud = document.querySelector('[data-soundCloud]')
 const instagram = document.querySelector('[data-instagram]')
 const gitHub = document.querySelector('[data-gitHub]')
 
-soundCloud.addEventListener('click',()=>{
+const sound = document.querySelector('.sound')
+const inst = document.querySelector('.inst')
+const hub = document.querySelector('.hub')
+sound.addEventListener('click', ()=>{
     location.assign('')
 })
 
-instagram.addEventListener('click',()=>{
+soundCloud.addEventListener('pointerdown',()=>{
+    location.assign('')
+})
+
+inst.addEventListener('pointerdown',()=>{
     location.assign('https://www.instagram.com/kantayev.ramazan?igsh=cXdibnNjZXk2YTRp')
 })
 
-gitHub.addEventListener('click',()=>{
+hub.addEventListener('pointerdown',()=>{
+    location.assign('https://github.com/Yuoo15')
+})
+
+instagram.addEventListener('pointerdown',()=>{
+    location.assign('https://www.instagram.com/kantayev.ramazan?igsh=cXdibnNjZXk2YTRp')
+})
+
+gitHub.addEventListener('pointerdown',()=>{
     location.assign('https://github.com/Yuoo15')
 })}
 
@@ -60,4 +75,6 @@ function button(){
 
 button()
 
-
+document.addEventListener("click", (event)=>{
+    console.log(event.target)
+})
