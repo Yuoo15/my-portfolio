@@ -419,3 +419,38 @@ a{
         z-index: 1000;
     }
 }
+
+.preloder{
+	position: fixed;
+	inset: 0;
+	background-color: black;
+	animation-name: preloader_end ;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	opacity: 0;
+	pointer-events: none;
+    z-index: 1001;
+}
+
+.pleloader_in{
+	position: absolute;
+	inset: 0;
+	background-color:white;
+	animation-name: preloader_in_circle;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	clip-path: circle(75%);
+    z-index: 1001;
+}
+
+@keyframes preloader_end{
+	0%{opacity: 1;}
+	80%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+@keyframes preloader_in_circle{
+	0%{clip-path: circle(75%);}
+	50%{clip-path: circle(25%);}
+	100%{clip-path: circle(75%);}
+}

@@ -75,6 +75,10 @@ function button(){
 
 button()
 
-document.addEventListener("click", (event)=>{
-    console.log(event.target)
+const preloader = document.querySelector('.preloder')
+const preloaderCloseEvent = new Event('preloaderClose',{bubbles: true})
+preloader.addEventListener("animationend", (event)=>{
+	if(event.animationName === 'preloader_end'){
+		preloader.dispatchEvent(preloaderCloseEvent)
+}
 })
