@@ -29,6 +29,24 @@ html{
     transform: translateY(0);
 }
 
+@keyframes loader{
+    to{
+        width: 100%;
+    }
+}
+
+.loader{
+    width: 0%;
+    height: 5px;
+    background-color: #ff740f;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 500;
+    animation-name: loader;
+    animation-timeline: scroll();
+}
+
 header{
     display: flex;
     width: 100%;
@@ -41,7 +59,7 @@ header{
     position: fixed;
     top: 0%;
     left: 0%;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .nav-links{
