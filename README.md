@@ -14,5 +14,6 @@
 
 Telegram: [@Ramazz_mp3](https://t.me/Ramazz_mp3)  
 Почта: ramazankantaev751@gmail.ru
+Сайт: https://yuoo15.github.io/my-portfolio/
 
 © 2025 Рамазан
